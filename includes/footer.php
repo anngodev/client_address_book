@@ -2,7 +2,7 @@
 
         <footer class="text-center">
             <hr>
-            <small>Coded with &hearts; by <a href="http://bradhussey.ca/">Brad</a> in YYC</small>
+            <small>Coded with &hearts; by <a href="http://bradhussey.ca/">An</a> in PA</small>
         </footer>
         
         <!-- jQuery -->

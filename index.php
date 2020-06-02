@@ -1,5 +1,20 @@
 <?php
+session_start();
+
+// check to see if form was submitted; name atr from submit button
+if ( isset( $_POST["login"] ) ) {
+    // if form was submitted
+    // create variables
+    // wrap data with validate function
+    $formEmail = $_POST["email"];
+    $formPass = $_POST["password"];
+}
+
 include('includes/header.php');
+
+//$password = password_hash("abc123", PASSWORD_DEFAULT);
+//echo $password;
+
 ?>
 
 <h1>Client Address Book</h1>
