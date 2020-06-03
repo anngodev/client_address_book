@@ -12,8 +12,9 @@
    str_replace()
 */
 
-function validateFormData($formData);
+function validateFormData($formData) {
     $formData = trim( stripslashes( htmlspecialchars( strip_tags( str_replace( array( "(", ")" ), "", $formData ) ), ENT_QOUTES ) ) );
     return $formData;
+}
 
 ?>

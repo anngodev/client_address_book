@@ -44,7 +44,7 @@
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <p class="navbar-text">Aloha, Brad!</p>
+                    <p class="navbar-text">Aloha, An!</p>
 
                     <li><a href="logout.php">Log out</a></li>
                 </ul>
