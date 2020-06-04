@@ -70,7 +70,7 @@ include('includes/header.php');
 <form class="form-inline" action="<?php echo htmlspecialchars( $_SERVER['PHP_SELF'] ); ?>" method="post">
     <div class="form-group">
         <label for="login-email" class="sr-only">Email</label>
-        <input type="text" class="form-control" id="login-email" placeholder="email" name="email">
+        <input type="text" class="form-control" id="login-email" placeholder="email" name="email" value="<?php echo $formEmail; ?>">
     </div>
     <div class="form-group">
         <label for="login-password" class="sr-only">Password</label>

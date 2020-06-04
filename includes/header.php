@@ -37,18 +37,37 @@
             </div>
 
             <div class="collapse navbar-collapse" id="navbar-collapse">
-
+                
+                <?php 
+                    if($_SESSION["loggedInUser"]) {
+                        
+                        
+                ?>
+                
                 <ul class="nav navbar-nav">
                     <li><a href="clients.php">My Clients</a></li>
                     <li><a href="add.php">Add Client</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <p class="navbar-text">Aloha, An!</p>
-
-                    <li><a href="logout.php">Log out</a></li>
+                    <p class="navbar-text">Hello, An!</p>
+                    
+                    <li><a href="logout.php">Log Out</a></li>
                 </ul>
-
+                
+                 <?php
+                } else {
+                ?>
+                
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li><a href="index.php">Log In</a></li>
+                    
+                </ul>
+                
+                <?php
+                    }
+                ?>
             </div>
 
         </div>
