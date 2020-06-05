@@ -4,7 +4,7 @@ session_start();
 include("includes/functions.php");
 
 // check to see if form was submitted; name atr from submit button
-if ( isset( $_POST["login"] ) ) {
+if( isset( $_POST["login"] ) ) {
     // if form was submitted
     // create variables
     // wrap data with validate function
@@ -22,10 +22,10 @@ if ( isset( $_POST["login"] ) ) {
     
     // Verify if result has returned
     // if anything has been returned
-    if( mysqli_num_rows( $result ) > 0 ) {
+    if( mysqli_num_rows($result) > 0 ) {
         
         // store some basic user data in variables
-        while( $row = mysqli_fetch_assoc( $result ) ) {
+        while( $row = mysqli_fetch_assoc($result) ) {
             $name       =   $row["name"];
             $hashedPass =   $row["password"];
         }
@@ -55,7 +55,7 @@ if ( isset( $_POST["login"] ) ) {
 // Close connetion
 mysqli_close($conn);
 
-include('includes/header.php');
+include("includes/header.php");
 
 //$password = password_hash("abc123", PASSWORD_DEFAULT);
 //echo $password;
